@@ -1,0 +1,280 @@
+html {
+  font-family: "IBM Plex Mono", monospace, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.15;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
+li a {
+  display: block;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+
+li a::after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s;
+}
+
+li a:hover::after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: rgb(255, 0, 76);
+    transition: width 0.2s;
+}
+.logo a {
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.title a {
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.title a::after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s;
+}
+
+.title a:hover::after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: rgb(255, 0, 76);
+    transition: width 0.2s;
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+h1 span::after {
+  content: url("assets/brush.svg");
+  position: absolute;
+  top: 20px;
+  left: -16px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ver {
+    max-width: 300px;
+    float: left;
+}
+
+.hor {
+    max-width: 500px;
+}
+
+.header, .photos, .title, .cont-for-button {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  padding: 72px 24px 0 24px;
+  display: flex;
+  align-content: flex-center;
+  justify-content: space-between;
+}
+
+.title {
+padding: 102px 24px 102px 24px;
+}
+
+.photos {
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 102px;
+}
+
+.cont-for-button {
+    padding: 80px 24px 102px 24px;
+}
+
+.title h1, .title p, .disclamer {
+  max-width: 600px;
+}
+
+.img-cont-ver, .img-cont-hor {
+  width: 50%;
+  min-width: max-content;
+
+}
+
+.logo {
+  width: 30%;
+}
+
+.img-cont-ver {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.title-photo {
+  margin: 24px;
+  width: 136px;
+  font-size: 13px;
+}
+
+.year {
+  color: #777;
+  margin-top: 4px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #ededed;
+  padding: 24px;
+  height:auto;
+}
+
+.footer-cont {
+    display: flex;
+    align-items: center;
+    align-content: flex-center;
+    justify-content: space-between;
+}
+
+.disclamer {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 16px;
+  clear: left;
+}
+
+@media (max-width: 1051px) {
+    .photos {
+        padding: 0 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        row-gap: 80px;
+        column-gap: 64px;
+      }
+}
+
+@media (max-width: 547px) {
+    .logo {
+        line-height: 1;
+      }
+
+    h1 {
+        font-size: 36px;
+      }
+      h1 span::after {
+
+        left: -32px;
+
+      
+      
+        z-index: -1;
+      }
+     
+      .img-cont-ver, .img-cont-hor {
+        width: 100%;
+        max-width: 500px;
+        min-width: 300px;
+
+      }
+     
+      .ver {
+        max-width: 100%;
+    }
+    
+    .hor {
+        max-width: 100%;
+        
+    }
+    .cont-for-button {
+        max-width: 100%;
+        padding: 40px 24px 80px 24px;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        color: black;
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+      }
+  }
