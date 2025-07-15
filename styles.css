@@ -244,11 +244,11 @@ padding: 102px 24px 102px 24px;
       h1 span::after {
 
         left: -32px;
-
-      
-      
         z-index: -1;
       }
+	.header {
+ 		padding: 32px 24px 0 24px;
+	}
      
       .img-cont-ver, .img-cont-hor {
         width: 100%;
